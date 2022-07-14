@@ -526,4 +526,4 @@ def user_input():
 display_details()
 user_input()
 # Testing git out
-
+# totally real
