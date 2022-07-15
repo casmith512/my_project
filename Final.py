@@ -529,9 +529,6 @@ user_input()
 # totally real
 # all about butts
 # butts butts butts
-<<<<<<< HEAD
-#thistihtitht
-=======
+
 #T&Academic
 
->>>>>>> testing
