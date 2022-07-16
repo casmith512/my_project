@@ -25,7 +25,7 @@
    <style>
       body{max-width: 800px;
       background-color:rgb(0,43,54) ;
-      color:rgb(131,148,150);
+      color:var(--base-font-color);
       } 
       main{max-width: 700px;
       float: left;}
@@ -41,8 +41,7 @@
       color: white;
       <!border: 1px solid #ccc;>
       }
-      nav ul li a:visited{color: var(--c-magenta);}      
-      nav ul li a:active {color:var(--c-magenta);} 
+
       nav ul li a:hover{color: var(--c-orange);
       }     
       h2{padding-top: 50px;
@@ -56,10 +55,10 @@
       <nav>
          <ul>
          <ul >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our team</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.thecrag.com/en/climbing/australia/kangaroo-point/route/12214381">Home</a></li>
+            <li><a href="https://www.thecrag.com/en/climbing/australia/kangaroo-point/route/12214873">Our team</a></li>
+            <li><a href="https://www.thecrag.com/en/climbing/australia/kangaroo-point/route/12214633">Projects</a></li>
+            <li><a href="https://www.thecrag.com/en/climbing/australia/kangaroo-point/route/12214309">Contact</a></li>
          </ul>
          <br>
       </nav>
@@ -91,6 +90,12 @@
          </ul>
       </aside>
       <!-- Here is our page's main content -->
+      <style>
+        main article p a:hover{color: var(--c-orange);
+
+        }
+
+      </style>
       <main>
          <!-- It contains an article -->
          <article >
@@ -98,12 +103,12 @@
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
          <article style="border:3px solid cyan;">
             <h3 >Subsection</h3>
-            <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+            <p>Donec ut librero sed accu vehicula ultricies a non <a href="https://www.thecrag.com/en/climbing/australia/kangaroo-point/route/12214153">tortor</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
             <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
          </article>
          <article style="border:3px solid cyan;" >
             <h3>Another subsection</h3>
-            <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+            <p>Donec viverra mi quis quam pulvinar at malesuada arcu <a href="https://www.thecrag.com/en/climbing/australia/kangaroo-point/route/12213799">rhoncus</a>. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
             <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
          </article>
          <br>
@@ -112,12 +117,16 @@
       <!-- And here is our main footer that is used across all the pages of our website -->
       <style>
          footer{
+          border: 3px solid var(--c-red);
+  
          float:left;
+  
          width: 800px;
-         line-height: 0px;
+         line-height: 0;
          left:0;
          bottom:0;
          background-color: var(--c-background-highlights);
+    
          }
       </style>
       <footer>
