@@ -29,26 +29,40 @@
 
   </head>
 <style>
-body{max-width: 800px;} 
+body{max-width: 800px;
+  background-color:rgb(0,43,54) ;
+  color:rgb(131,148,150);
+    } 
+main{max-width: 700px;
+      float: left;}
+header{text-align: center;
+        font-size: 150%;
+        color: yellow;
+        background-color: var(--c-background-highlights);
+      }
+
+nav ul li{display:inline-block;
+          list-style-type:none;
+          padding-left: 0px;
+          width:175px;
+
+          color: white;
+        border: 1px solid #ccc;
+
+        }
+nav ul li a:hover{color: var(--c-orange);
+          }
+h2{padding-top: 50px;
+}
 
 </style>
-  <body style="background-color:rgb(0,43,54);color:rgb(131,148,150);"></bodystyle>>
+  <body>
     <!-- Here is our main header that is used across all the pages of our website -->
 
-    <header style= "color:yellow; background-color: rgb(7, 54, 66);">
+    <header>
           <h1>Header</h1>
     </header>
-<style>
-nav ul li{
-  display: inline;
-  list-style-type: none;
-  width: 150px;
-  float:left;
-  color: white;
-}
-li a:hover{color: rgb(203, 75, 22);}
 
-</style>
     <nav>
     
      <ul>
@@ -58,15 +72,41 @@ li a:hover{color: rgb(203, 75, 22);}
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-
+      <br>
+    </nav>
        <!-- A Search form is another common non-linear way to navigate through a website. -->
-
+      
+       <nav>
        <form>
          <input type="search" name="q" placeholder="Search query">
          <input type="submit" value="Go!">
        </form>
-     </nav>
 
+       
+     </nav>
+     <style>
+      aside{float: right;
+      right:0;
+      width: 100px;
+      color:var(--c-green);
+      }
+      aside ul li a:active{color: var(--c-red);}
+      aside ul li a:visited{color: var(--c-red);}
+      aside ul li a:hover{color: var(--c-blue);}
+    </style>
+ 
+
+  <aside>
+      <h2>Related </h2>
+
+      <ul>
+        <li><a href="https://satterley.com.au/seaside-estate">Oh I do like to be beside the seaside</a></li>
+        <li><a href="#">Oh I do like to be beside the sea</a></li>
+        <li><a href="#">Although in the North of England</a></li>
+        <li><a href="#">It never stops raining</a></li>
+        <li><a href="#">Oh well...</a></li>
+      </ul>
+  </aside>
     <!-- Here is our page's main content -->
     <main>
 
@@ -89,21 +129,11 @@ li a:hover{color: rgb(203, 75, 22);}
 
         <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
       </article>
-
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
-        </ul>
-      </aside>
-
     </main>
+      <!-- the aside content can also be nested within the main content -->
+     
+
+ 
 
     <!-- And here is our main footer that is used across all the pages of our website -->
 
